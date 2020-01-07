@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="calculadora mx-auto mt-5 boder border-dark bg-dark text-center w-25 rounded">
+        <h1 id="titulo" class="text-white p-2">CASIO-APP</h1>
+        <div class="calculadora_display text-right">
+            <div class="h2 p-2 input-group-text dis input  p-4 mx-4" id="resultado" type="text" value="0">
+            </div>
+        </div>
+        <!-- Keys -->
+        <div class="calculadora__keys d-inline-flex mt-2">
+
+            <div class="">
+                <button class="key suma p-5 border border-dark bg-secondary rounded" onclick="add('+')"><i
+                        class="fa fa-plus"></i></button>
+            </div>
+            <div class="">
+                <button class="key resta p-5 border border-dark bg-secondary rounded" onclick="add('-')"><i
+                        class="fa fa-minus"></i>
+                </button>
+            </div>
+            <div class="">
+                <button class="key multiplicacion p-5 border border-dark bg-secondary rounded" onclick="add('*')"><i
+                        class="fa fa-times"></i></button>
+            </div>
+            <div class="">
+                <button class="key division p-5 border border-dark bg-secondary rounded" onclick="add('/')"><i
+                        class="h6">/</i></button>
+            </div>
+
+        </div>
+        <!-- End Keys -->
+
+        <div class="padre mt-2">
+            <div class="numeros">
+                <div class=" d-inline-flex">
+                    <div class="contenedor ">
+                        <button class="h3 p-5 rounded" onclick="add('9')">9</button>
+                    </div>
+                    <div class="contenedor">
+                        <button class="h3 p-5 rounded" onclick="add('8')">8</button>
+                    </div>
+                    <div class="contenedor">
+                        <button class="h3 p-5 rounded" onclick="add('7')">7</button>
+                    </div>
+                </div>
+                <br>
+                <div class="d-inline-flex">
+                    <div class="contenedor">
+                        <button class="h3 p-5 rounded" onclick="add('6')">6</button>
+                    </div>
+                    <div class="contenedor">
+                        <button class="h3 p-5 rounded" onclick="add('5')">5</button>
+                    </div>
+                    <div class="contenedor">
+                        <button class="h3 p-5 rounded" onclick="add('4')">4</button>
+                    </div>
+                </div>
+                <br>
+
+                <div class="d-inline-flex">
+                    <div class="contenedor">
+                        <button class="h3 p-5 rounded" onclick="add('3')">3</button>
+                    </div>
+                    <div class="contenedor">
+                        <button class="h3 p-5 rounded" onclick="add('2')">2</button>
+                    </div>
+                    <div class="contenedor">
+                        <button class="h3 p-5 rounded" onclick="add('1')">1</button>
+                    </div>
+                </div>
+                <div class="d-inline-flex">
+                    <div class="contenedor">
+                        <button class="h3 p-5 rounded" onclick="add('0')">0</button>
+                    </div>
+                    <div class="contenedor">
+                        <button class="h3 p-5 rounded" onclick="add('.')">.</button>
+                    </div>
+                    <div class="contenedor">
+                        <button class="h3 p-5 ac bg-danger text-white rounded" onclick="del()">C</button>
+                    </div>
+
+
+                </div>
+                <div class="contenedor d-block bg-success btn btn-success p-2">
+                    <button class="btn btn-block" onclick="calc()">
+                        <h1 class="text-white">=</h1>
+                    </button> </div>
+            </div>
+
+        </div>
+        <script src="https://use.fontawesome.com/1afc3e52e8.js"></script>
+
+        <script src="app.js"> </script>
+
+</body>
+
+</html>
